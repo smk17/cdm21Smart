@@ -1,0 +1,21 @@
+/* pages/user/user.wxss */
+.userinfo-container{
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.item_container{
+  margin: 50rpx 0;
+  width: 100%;
+  background-color: #fff;
+}

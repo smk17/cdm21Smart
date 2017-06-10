@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<view wx:if="{{device_list.length == 0}}" class="container null_device">
+  <icon class="container_top" type="info" size="100"/>
+  <text class="container_text">设备列表还是空的</text>
+  <navigator class="container_top container_navigator" url="add_device/add_device">去添加</navigator>
+  
+</view>
+<view wx:else class="container">
+  <navigator url="add_device/add_device" class="item_container add_device_container">
+    <image class="item_image" src="../../image/add.png"></image>
+    <text class="item_name">添加设备</text>
+    <image class="widget__arrow" src="/image/arrowright.png" mode="aspectFill" />
+  </navigator>
+  <block wx:for="{{device_list}}" wx:for-item="device" wx:key="id">
+    <view class="graySpace"></view>
+    <view class="item_container tap" bindlongtap="onLongTap" bindtap="onDeviceChart" data-device="{{device}}">
+      <text class="item_name">{{device.name}}</text>
+      <text class="item_value">{{device.value==""?'离线':device.value}}</text>
+      <image class="widget__arrow" src="/image/arrowright.png" mode="aspectFill" /> 
+  </view>
+  </block>
+</view>

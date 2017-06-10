@@ -1,0 +1,10 @@
+<!--pages/user/user.wxml-->
+<view catchtap="userViewTap" class="userinfo-container tap">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="item_container tap" bindtap="openSetting">
+    <image class="item_image" src="/image/settings.png"></image>
+    <text class="item_name">设置</text>
+    <image class="widget__arrow" src="/image/arrowright.png" mode="aspectFill" />
+</view>

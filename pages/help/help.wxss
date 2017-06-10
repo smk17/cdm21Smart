@@ -1,0 +1,21 @@
+/* pages/help/help.wxss */
+Page{
+  background-color: #2A88DF;
+  color: white;
+}
+.container{
+  margin: 100rpx 60rpx;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.title{
+  font-size: 32rpx;
+  opacity:0.9;
+}
+.content{
+  margin-top: 20rpx;
+  margin-bottom: 26rpx;
+  font-size: 24rpx;
+  opacity:0.6;
+  line-height: 150%;
+}

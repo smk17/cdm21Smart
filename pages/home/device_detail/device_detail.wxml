@@ -1,0 +1,49 @@
+<!--pages/home/device_charts/device_charts.wxml-->
+<view class="container">
+  <view class="tabs">
+    <view id="1" class="tabs_left" style="background: {{index==1?'#888':'white'}};" bindtap="onTabs">
+      <text>图表</text>
+    </view>
+    <view id="2" class="tabs_right" style="background: {{index==2?'#888':'white'}};" bindtap="onTabs">
+      <text>设置</text>
+    </view>
+  </view>
+</view>
+<view class="container" style="display:{{index==1?'flex':'none'}};">
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="deviceId">
+    <text>{{item.name}}动态图表</text>
+    <canvas id="{{item.id}}" canvas-id="{{item.canvasId}}" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+  </block>
+</view>
+<view class="container" style="display:{{index==2?'flex':'none'}};">
+  <view class="graySpace"></view>
+  <view class="item_container tap" bindtap="rename">
+    <text class="item_name">重命名</text>
+    <text class="dev_name">{{name}}</text>
+    <image class="widget__arrow" src="/image/arrowright.png" mode="aspectFill" />
+  </view>
+  <view class="classname"></view>
+  <view class="graySpace"></view>
+  <view class="item_container tap" bindtap="onDeleteDevice">
+    <text class="item_name">删除设备</text>
+    <image class="widget__arrow" src="/image/arrowright.png" mode="aspectFill" />
+  </view>
+  <view class="graySpace"></view>
+</view>
+
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <!--对话框标题-->
+  <view class="dialog-title">重命名</view>
+  <!--对话框输入部分-->
+  <view class="input-view">
+    <input type="text" value="{{name}}" confirm-type="确认" bindblur="input_content" class="input-style"/>
+  </view>
+  <!--对话框按钮-->
+  <view class="line-top"></view>
+  <view class="btn-view">
+  <view class="btn-cancel tap" bindtap="click_cancel">取 消</view>
+  <view class="btn-line"></view>
+  <view class="btn-cancel tap" bindtap="click_ok">确 定</view>
+  </view>
+</view>

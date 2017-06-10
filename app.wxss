@@ -1,0 +1,48 @@
+/**app.wxss**/
+Page{
+  background-color: #EFEFEF;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.tap{
+  background-color: #fff;
+}
+
+.tap:active{
+  background-color: #f9f9f9;
+}
+
+.graySpace{
+  width: 100%;
+  background: #f9f9f9;
+  font-size: 12px;
+  min-height: 2rpx;
+}
+.item_container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.item_image{
+  width: 36rpx;
+  height: 36rpx;
+  margin: 20rpx;
+}
+.item_name{
+  flex: 1;
+  padding-left: 20rpx;
+  color: #444;
+}
+.widget__arrow{
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 44rpx;
+}

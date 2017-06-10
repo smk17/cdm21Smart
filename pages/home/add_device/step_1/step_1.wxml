@@ -1,0 +1,11 @@
+<!--pages/home/add_device/step_1/step_1.wxml-->
+<view class="container">
+  <view wx:if="{{success}}" class="progress">
+    <text >{{progress}}%</text>
+  </view>
+  <icon wx:else type="{{icon_type}}" size="100"/>
+  <text class="title">{{title}}</text>
+  <text class="subtitle">{{subtitle}}</text>
+  <button class="button" bindtap="cencel">{{btntitle}}</button>
+</view>
+

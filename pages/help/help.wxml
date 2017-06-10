@@ -1,0 +1,11 @@
+<!--pages/help/help.wxml-->
+<view class="container" style="height: {{height}}px">
+  <text class="title">{{name}}是否有电？</text>
+  <text class="content">建议给{{name}}更换新的电池。</text>
+  <text class="title">附近有其它手机之前连接过{{name}}？</text>
+  <text class="content">可先将该手机蓝牙关闭，然后再使用当前手机进行绑定。</text>
+  <text class="title">尝试重启蓝牙</text>
+  <text class="content">如果{{name}}有电，且手机贴近后仍无法搜索到，可以尝试重新启动手机蓝牙。</text>
+  <text class="title">尝试重启手机</text>
+  <text class="content">如果重启蓝牙无效，请尝试重启手机。</text>
+</view>

@@ -1,0 +1,39 @@
+/* pages/home/add_device/add_device.wxss */
+.item_container{
+  padding: 20rpx;
+}
+.null_device_image{
+  width: 490rpx;
+  height: 224rpx;
+  padding-bottom: 40rpx;
+}
+.null_device{
+  background-color: white;
+  padding: 300rpx 0;
+  color: #aaa;
+}
+.scan_container{
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #aaa;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+}
+.scan_image{
+  width: 96rpx;
+  height: 96rpx;
+  margin-bottom: 20rpx;
+}
+.scan_image:active{
+  background-color: #f0f0f0;
+  border-radius: 50%;  
+}

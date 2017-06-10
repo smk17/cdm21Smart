@@ -1,0 +1,37 @@
+/* pages/home/home.wxss */
+Page{
+  background-image: url(http://ac-9obrw5lm.clouddn.com/c8ddb3ea504978381814.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+.null_device{
+  padding-top: 200rpx;
+}
+.container_top{
+  margin-top: 40rpx;
+  color: #aaa;
+}
+.container_text{
+  margin-top: 40rpx;
+  color: #2A88DF;
+}
+.container_navigator{
+  padding: 20rpx;
+  border:1rpx solid #D7D7D7;
+  background-color: #F6F6F6;
+  opacity:0.8;
+}
+.add_device_container{
+  margin: 25rpx 0;
+  width: 100%;
+  background-color: #fff;
+}
+.item_container{
+  opacity:0.8;
+}
+.item_value{
+  flex: 1;
+  border-left: 6rpx solid #2A88DF;
+  margin: 20rpx;
+  padding-left: 20rpx;
+}

@@ -1,0 +1,17 @@
+<!--pages/home/add_device/add_device.wxml-->
+<view wx:if="{{list.length == 0}}" class="container null_device">
+  <image class="null_device_image" src="/image/null_device.png"></image>
+  <text>暂无可连接设备</text>
+</view>
+<view wx:else class="container">
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="deviceId">
+    <view class="graySpace"></view>
+    <view class="item_container tap" bindtap="addDevice" data-devices="{{item}}">
+      <text class="item_name">{{item.name}}</text>
+    </view>
+  </block>
+</view>
+<view class="scan_container">
+  <image animation="{{animationData}}"  class="scan_image" bindtap="scan" src="/image/scan.png"></image>
+  <text>扫描设备</text>
+</view>

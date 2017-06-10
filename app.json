@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/home/add_device/add_device",
+    "pages/home/add_device/step_1/step_1",
+    "pages/home/device_detail/device_detail",
+    "pages/user/user",
+    "pages/help/help"
+  ],
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#2A88DF",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_HL.png",
+        "text": "我的设备"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_HL.png",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2A88DF",
+    "navigationBarTitleText": "智能家居",
+    "navigationBarTextStyle": "white"
+  }
+}
